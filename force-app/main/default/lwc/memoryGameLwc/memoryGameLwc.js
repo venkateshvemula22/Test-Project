@@ -28,7 +28,7 @@ export default class MemoryGameLwc extends LightningElement {
         {id:15, listClass:"card", type:'plane', icon:'fa fa-paper-plane-o'},
         {id:16, listClass:"card", type:'cube', icon:'fa fa-cube'},
       ]
-
+      //Game rating 
       get gameRating(){
           let stars =  this.moves<12 ? [1,2,3]:this.moves>=13 ? [1,2]:[1]
         return this.matchedCard.length ===16 ? stars :[]
